@@ -37,12 +37,12 @@ HEADERS += \
     viewer/viewerPlot.h
 
 FORMS += \
-    viewer/credit_Calc.ui \
-    viewer/credit_CalcResult.ui \
-    viewer/deposit_Calc.ui \
-    viewer/deposit_CalcResult.ui \
-    viewer/plot.ui \
-    viewer/x_Calc.ui
+    viewer/ui/credit_Calc.ui \
+    viewer/ui/credit_CalcResult.ui \
+    viewer/ui/deposit_Calc.ui \
+    viewer/ui/deposit_CalcResult.ui \
+    viewer/ui/plot.ui \
+    viewer/ui/x_Calc.ui
 
 TRANSLATIONS += \
     calc_en_US.ts
@@ -55,5 +55,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
+    calc_en_US.ts \
     style.css \
     viewer/button_style.css
